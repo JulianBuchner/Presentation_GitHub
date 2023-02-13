@@ -35,11 +35,16 @@
 - **GitHub Actions** : GitHub Actions ermöglicht es Entwicklern, automatisierte Workflows für ihre Projekte einzurichten.
 - **GitHub Pages** : GitHub Pages ermöglicht es Entwicklern, eine statische Website oder einen Blog für ihr Projekt zu erstellen.
 - **GitHub Marketplace** : GitHub Marketplace ist ein Marktplatz, auf dem Entwickler Tools und Anwendungen finden können, die sie in ihren Projekten auf GitHub verwenden können.
+- **GitHub Issues
+- **GitHub Classroom
 
 # Zusammenfassung:
 
 - Zusammenfassung der wichtigsten Funktionen und Vorteile von GitHub als Versionsverwaltung und als Plattform für die Zusammenarbeit und das Management von Projekten.
 - Empfehlungen für die Verwendung von GitHub, einschließlich des Einsatzes für private und öffentliche Projekte sowie für kleine und große Teams.
+
+
+learngitbranching.js.org
 
 
 ---
