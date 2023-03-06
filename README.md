@@ -1,10 +1,4 @@
-# Einführung in GitHub
-
-- **Definition** : GitHub ist eine Webplattform, die es Entwicklern ermöglicht, Code und Projekte zu verwalten und zu teilen.
-- **Zweck** : Der Zweck von GitHub ist es, Entwickler dabei zu unterstützen, ihren Code effektiver zu verwalten, zu dokumentieren und mit anderen Entwicklern zusammenzuarbeiten.
-- **Geschichte** : GitHub wurde 2008 gegründet und hat seitdem eine rasche Expansion erlebt, die zu einer der größten und bekanntesten Plattformen für Entwickler geführt hat.
-
-# Grundlagen von Versionsverwaltung:
+# Was ist Versionsverwaltung:
 
 - **Definition** : Versionsverwaltung ist ein System, das es Entwicklern ermöglicht, den Fortschritt und die Änderungen an ihrem Code zu verfolgen und zu dokumentieren.
 - **Wichtigkeit** : Versionsverwaltung ist wichtig, da sie es Entwicklern ermöglicht, den Code jederzeit zu überprüfen, Fehler zu beheben und Änderungen rückgängig zu machen, ohne dass dabei die Integrität des Codes gefährdet wird.
