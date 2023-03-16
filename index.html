@@ -100,12 +100,9 @@
 			<section>
 				<h2>GitHub - Funktionen</h2>
 			</section>
-		</section>
-		<section>
+
 			<section>
 				<h3>branch</h3>
-			</section>
-			<section>
 				<p>unabhängige Entwicklungszweige</p>
 				<p>betreffen nicht Hauptprojekt</p>
 
@@ -114,19 +111,13 @@
 						<script type="text/template">
 							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (master)
 							$ git branch newSection
-
-							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (master)
-							$
 						</script>
 					</code>
 				</pre>
 			</section>
-		</section>
-		<section>
+
 			<section>
 				<h3>checkout</h3>
-			</section>
-			<section>
 				<p>zwischen branches wechseln</p>
 
 				<pre data-id="code-animation" style="width: 100%">
@@ -145,12 +136,9 @@
 					</code>
 				</pre>
 			</section>
-		</section>
-		<section>
+
 			<section>
 				<h3>commit</h3>
-			</section>
-			<section>
 				<p>Änderungen lokal speichern</p>
 				<p>Rollbacks möglich</p>
 
@@ -161,79 +149,106 @@
 							$ git commit -am "Added section 'push'"
 							[newSection b4170a5] update
 							1 file changed, 93 insertions(+), 2 deletions(-)
-
-							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (newSection)
-							$
 						</script>
 					</code>
 				</pre>
 			</section>
 			<section>
-				<p>-a ➔ alle Änderungen</p>
-				<p>-m ➔ commit Nachricht</p>
+				<p>-a ➔ Alle Änderungen</p>
+				<p>-m ➔ Commitnachricht</p>
 				<p>-amend ➔ ändert letzen commit</p>
 			</section>
-		</section>
-		<section>
-			<section>
+
+			<section data-auto-animate-id="two">
 				<h3>push</h3>
-			</section>
-			<section>
 				<p>Änderungen in das Repo auf aktuellen branch speichern</p>
 
 				<pre data-id="code-animation" style="width: 100%">
-					<code class="hljs javascript" data-trim data-line-numbers="|2|3-4">
+					<code class="hljs javascript" data-trim data-line-number>
 						<script type="text/template">
 							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (newSection)
 							$ git push
 							Everything up-to-date
-
-							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (newSection)
-							$
 						</script>
 					</code>
 				</pre>
 			</section>
-		</section>
-		<section>
+
 			<section>
 				<h3>merge</h3>
-			</section>
-			<section>
 				<p>Änderungen verschiedener branches zu einem migrieren</p>
 
 				<pre data-id="code-animation" style="width: 108%">
-					<code class="hljs javascript" data-trim data-line-numbers="|2|3-5">
+					<code class="hljs javascript" data-trim data-line-numbers>
 						<script type="text/template">
 							Julian@DESKTOP-KDE6AQ8 MINGW64 /d/Coding/Presentation_GitHub (newElements)
 							$ git merge newStyle
-							Merge made by the 'ort' strategy.
 							index.html | 153 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
 							1 file changed, 151 insertions(+), 2 deletions(-)
-
-							Julian@DESKTOP-KDE6AQ8 MINGW64 /d/Coding/Presentation_GitHub (newElements)
-							$
 						</script>
 					</code>
 				</pre>
 			</section>
-		</section>
-		<section>
+
 			<section>
 				<h3>pull</h3>
-			</section>
-			<section>
 				<p>Änderungen vom Repo laden</p>
 
-				<pre data-id="code-animation" style="width: 108%">
-					<code class="hljs javascript" data-trim data-line-numbers="|2-3|3-5">
+				<pre data-id="code-animation" style="width: 105%">
+					<code class="hljs javascript" data-trim data-line-numbers>
 						<script type="text/template">
 							Julian@DESKTOP-KDE6AQ8 MINGW64 /d/Coding/Presentation_GitHub (newElements)
 							$ git pull
 							Already up to date-
+						</script>
+					</code>
+				</pre>
+			</section>
+
+			<section>
+				<h3>reset</h3>
+				<p>Branch auf bestimmten commit zurücksetzen</p>
+
+				<pre data-id="code-animation" style="width: 105%">
+					<code class="hljs javascript" data-trim data-line-numbers>
+						<script type="text/template">
+							Julian@DESKTOP-KDE6AQ8 MINGW64 /d/Coding/Presentation_GitHub (newElements)
+							$ git reset HEAD
 
 							Julian@DESKTOP-KDE6AQ8 MINGW64 /d/Coding/Presentation_GitHub (newElements)
-							$
+							$ git reset --hard HEAD
+
+							Julian@DESKTOP-KDE6AQ8 MINGW64 /d/Coding/Presentation_GitHub (newElements)
+							$ git reset HEAD~1
+						</script>
+					</code>
+				</pre>
+			</section>
+
+			<section>
+				<h3>revert</h3>
+				<p>Neuer Commit setzt vorherigen Commit zurück</p>
+
+				<pre data-id="code-animation" style="width: 105%">
+					<code class="hljs javascript" data-trim data-line-numbers>
+						<script type="text/template">
+							Julian@DESKTOP-KDE6AQ8 MINGW64 /d/Coding/Presentation_GitHub (newElements)
+							$ git revert <commit>
+						</script>
+					</code>
+				</pre>
+			</section>
+
+			<section>
+				<h3>rebase</h3>
+				<p>Branchverlauf auf anderen Punkt setzen</p>
+
+				<pre data-id="code-animation" style="width: 105%">
+					<code class="hljs javascript" data-trim data-line-numbers>
+						<script type="text/template">
+							Julian@DESKTOP-KDE6AQ8 MINGW64 /d/Coding/Presentation_GitHub (newSection)
+							$ git rebase newElement
+							Successfully rebased and updated refs/heads/newSection.
 						</script>
 					</code>
 				</pre>
@@ -241,71 +256,7 @@
 		</section>
 
 
-
 		<!-- --------------------- AB HIER SIND DIE DEMO SLIDES--------------------- -->
-
-		<section>
-			<h2>Slides</h2>
-			<p>
-				Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
-			</p>
-		</section>
-
-		<section data-visibility="hidden">
-			<h2>Hidden Slides</h2>
-			<p>
-				This slide is visible in the source, but hidden when the presentation is viewed. You can show all hidden slides by setting the `showHiddenSlides` config option to `true`.
-			</p>
-		</section>
-
-		<section data-auto-animate>
-			<h2 data-id="code-title">Pretty Code</h2>
-			<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
-						import React, { useState } from 'react';
-
-						function Example() {
-						  const [count, setCount] = useState(0);
-
-						  return (
-						    ...
-						  );
-						}
-					</code></pre>
-			<p>Code syntax highlighting courtesy of <a href="https://highlightjs.org/usage/">highlight.js</a>.</p>
-		</section>
-
-		<section data-auto-animate>
-			<h2 data-id="code-title">With animations</h2>
-			<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
-						import React, { useState } from 'react';
-
-						function Example() {
-						const [count, setCount] = useState(0);
-
-						return (
-						<div>
-						      <p>You clicked {count} times</p>
-						      <button onClick={() => setCount(count + 1)}>
-						        Click me
-							</button>
-						    </div>
-						);
-						}
-
-						function SecondExample() {
-						const [count, setCount] = useState(0);
-
-						return (
-						<div>
-						      <p>You clicked {count} times</p>
-						      <button onClick={() => setCount(count + 1)}>
-						        Click me
-							</button>
-						    </div>
-						);
-						}
-					</script></code></pre>
-		</section>
 
 		<section>
 			<h2>Point of View</h2>
@@ -344,13 +295,6 @@
 				<div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
 			</div>
 			<h2 style="margin-top: 20px;">Auto-Animate</h2>
-		</section>
-
-		<section>
-			<h2>Touch Optimized</h2>
-			<p>
-				Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-			</p>
 		</section>
 
 		<section data-markdown>
