@@ -103,7 +103,7 @@
 		</section>
 		<section>
 			<section>
-				<h3>branches</h3>
+				<h3>branch</h3>
 			</section>
 			<section>
 				<p>unabhängige Entwicklungszweige</p>
@@ -155,10 +155,38 @@
 				<p>Rollbacks möglich</p>
 
 				<pre data-id="code-animation" style="width: 100%">
-					<code class="hljs javascript" data-trim data-line-numbers="|2">
+					<code class="hljs javascript" data-trim data-line-numbers="|2|3-4">
 						<script type="text/template">
 							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (newSection)
-							$ git commit -a -m "Added section 'push'"
+							$ git commit -am "Added section 'push'"
+							[newSection b4170a5] update
+							1 file changed, 93 insertions(+), 2 deletions(-)
+
+							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (newSection)
+							$
+						</script>
+					</code>
+				</pre>
+			</section>
+			<section>
+				<p>-a ➔ alle Änderungen</p>
+				<p>-m ➔ commit Nachricht</p>
+				<p>-amend ➔ ändert letzen commit</p>
+			</section>
+		</section>
+		<section>
+			<section>
+				<h3>push</h3>
+			</section>
+			<section>
+				<p>Änderungen in das Repo speichern</p>
+				<p>Rollbacks möglich</p>
+
+				<pre data-id="code-animation" style="width: 100%">
+					<code class="hljs javascript" data-trim data-line-numbers="|2|3-4">
+						<script type="text/template">
+							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (newSection)
+							$ git commit -am "Added section 'push'"
 							[newSection b4170a5] update
 							1 file changed, 93 insertions(+), 2 deletions(-)
 
@@ -169,41 +197,52 @@
 				</pre>
 			</section>
 		</section>
-
-
 		<section>
 			<section>
-				<h3>checkout</h3>
+				<h3>merge</h3>
 			</section>
 			<section>
-				<p>zwischen branches wechseln</p>
-			</section>
-			<section data-auto-animate style="width: 103%">
-				<pre data-id="code-animation">
-					<code class="hljs javascript" data-trim data-line-numbers="|2|5|11|17">
+				<p>Änderungen verschiedener branches zu einem migrieren</p>
+
+				<pre data-id="code-animation" style="width: 108%">
+					<code class="hljs javascript" data-trim data-line-numbers="|2|3-5">
 						<script type="text/template">
-							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (master)
-							$ git branch bugFix
+							Julian@DESKTOP-KDE6AQ8 MINGW64 /d/Coding/Presentation_GitHub (newElements)
+							$ git merge newStyle
+							Merge made by the 'ort' strategy.
+							index.html | 153 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+							1 file changed, 151 insertions(+), 2 deletions(-)
 
-							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (master)
-							$ git checkout bugFix
-
-							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (bugFix)
-							$ git commit
-
-							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (bugFix)
-							$ git checkout master
-
-							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (master)
-							$ git commit
-
-							Julian@DESKTOP-PC MINGW64 /d/Coding/Presentation_GitHub (master)
-							$ git merge bugFix
+							Julian@DESKTOP-KDE6AQ8 MINGW64 /d/Coding/Presentation_GitHub (newElements)
+							$
 						</script>
 					</code>
 				</pre>
 			</section>
 		</section>
+		<section>
+			<section>
+				<h3>pull</h3>
+			</section>
+			<section>
+				<p>Änderungen vom Repo laden</p>
+
+				<pre data-id="code-animation" style="width: 108%">
+					<code class="hljs javascript" data-trim data-line-numbers="|2-3|3-5">
+						<script type="text/template">
+							Julian@DESKTOP-KDE6AQ8 MINGW64 /d/Coding/Presentation_GitHub (newElements)
+							$ git pull
+							Already up to date-
+
+							Julian@DESKTOP-KDE6AQ8 MINGW64 /d/Coding/Presentation_GitHub (newElements)
+							$
+						</script>
+					</code>
+				</pre>
+			</section>
+		</section>
+
+
 
 		<!-- --------------------- AB HIER SIND DIE DEMO SLIDES--------------------- -->
 
